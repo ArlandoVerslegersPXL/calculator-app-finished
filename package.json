@@ -17,19 +17,19 @@
     "supertest": "^6.1.4",
     "jest-junit": "^13.0.0"
   },
-  "jest": {
+ "jest": {
     "testEnvironment": "node",
     "testResultsProcessor": "jest-junit",
     "coveragePathIgnorePatterns": [
       "/node_modules/",
       "/public"
-    ]
-  },
-  "reporters": [
+    ],
+    "reporters": [
       "default",
       ["jest-junit", {
           "outputDirectory": "./test-results/junit",
           "outputName": "results.xml"
       }]
     ]
+  }
 }
